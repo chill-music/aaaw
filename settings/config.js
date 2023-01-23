@@ -2,7 +2,7 @@ require("dotenv").config();
 const { resolve } = require("path");
 
 module.exports = {
-    TOKEN: process.env.TOKEN || "ODAyMDEyMDM4MjU5ODAyMjA0.Gu5UwC.wwNwACugXH4vfFiDt2Unn1ocZnJTB5NQXVIk4g",  // your bot token
+    TOKEN: process.env.TOKEN || "",  // your bot token
     PREFIX: process.env.PREFIX || "-", //<= default is -  // bot prefix
     EMBED_COLOR: process.env.EMBED_COLOR || "#EC1459", //<= default is "#000001"
 
@@ -18,7 +18,7 @@ module.exports = {
 
     DEV_ID: [], // if you want to use command bot only, you can put your id here example: ["123456789", "123456789"]
 
-    MONGO_URI: process.env.MONGO_URI || "mongodb+srv://shehabtito:01125336794@shehab.zreqzey.mongodb.net/test", // your mongo uri
+    MONGO_URI: process.env.MONGO_URI || "", // your mongo uri
     LIMIT_TRACK: parseInt(process.env.LIMIT_TRACK || "200"),  //<= dafault is "100" // limit track in playlist
     LIMIT_PLAYLIST: parseInt(process.env.LIMIT_PLAYLIST || "5"), //<= default is "10" // limit can create playlist
 
